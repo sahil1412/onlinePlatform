@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>StudyPlatform</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="action" href="form_action.php">
+</head>
+
+<body>
+  <span id="back-image">
+    <img src="../../assets/books.jpg" class="bg" id="back-image"></span>
+  <span id="back-video">
+    <video autoplay loop muted class="bg" id="back-video">
+      <source src="../../assets/video2.mp4" type="video/mp4">
+    </video>
+  </span>
+  <div class="main_container">
+    <form action="form_action.php" method="POST" id="nameform" enctype="multipart/form-data">
+      <h1>NEKI RAM SHARMA COLLEGE , ROHTAK</h1>
+      <p>ADMIT CARD</p>
+      <div class="detail_container">
+        <input type="text" id="fname" name="fname" placeholder="first name">
+        <input type="text" id="mname" name="mname" placeholder="middle name">
+        <input type="text" id="lname" name="lname" placeholder="last name">
+        <br>
+        <input type="text" id="rollnumber" name="rollnumber" placeholder="rollnumber">
+        <input type="text" id="registration" name="registration" placeholder="registration no.">
+        <input type="text" id="class" name="class" placeholder="class">
+        <br>
+        <input type="text" id="fathername" name="fathername" placeholder="father name">
+        <input type="text" id="mothername" name="mothername" placeholder="mother name">
+        <input type="date" id="birthdate" name="birthdate" placeholder="birthdate">
+        <br>
+        <input type="phone" id="selfphone" name="selfphone" placeholder="student mobile no.">
+        <input type="phone" id="parentsphone" name="parentsphone" placeholder="parents phone no.">
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="male" id="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="female" id="gender">Female</label>
+        <input type="radio" id="gender" name="gender" value="other">
+        <label for="other" id="gender">Other</label>
+        <input type="text" id="address" name="address" placeholder="permanent address">
+      </div>
+
+      <!--<div class="image_sign_container">
+        <input type="image" id="image" src="image.jpg" name="image">
+      </div> -->
+      <input type="submit" id="button" value="Submit" form="nameform">
+      <input type="button" id="button" value="Reset" form="nameform">
+    </form>
+  </div>
+
+
+</body>
+
+</html>
